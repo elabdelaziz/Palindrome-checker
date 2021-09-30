@@ -5,9 +5,7 @@ addEventListener("DOMContentLoaded", (event) => {
       .getElementById("word")
       .value.toLowerCase()
       .replace(/\W/g, "");
-    console.log(word);
     let revertedWord = word.split("").reverse().join("");
-    console.log(revertedWord);
 
     word === revertedWord
       ? (document.getElementById("paragraph").innerHTML = "true")
